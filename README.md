@@ -1,4 +1,4 @@
-# Text-to-Image
+# Text-to-Image for low vram
 
 ​👋 This project is similar to many other platforms that run AI models to perform tasks. The current version focuses on text-to-image generation.
 
