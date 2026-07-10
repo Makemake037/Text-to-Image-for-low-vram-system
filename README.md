@@ -66,3 +66,11 @@ Because the repository layout remains incredibly lightweight, it does not includ
 2. Run the bundled synchronization script:
    ```cmd
    sync_models.bat
+
+### after launch_ui.bat run
+
+Open your web browser and navigate to the local host address: http://127.0.0.1:7860/
+
+Configuration Steps in the UI:
+
+Select working 1 from the profile dropdown menu. This loads the default pre-packaged profile mapped inside your outputs/checkpoints.json file.
