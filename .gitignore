@@ -1,0 +1,19 @@
+# Ignore heavy model weight formats
+*.safetensors
+*.bin
+*.pth
+*.ckpt
+*.onnx
+
+# Ignore system/OS garbage
+.DS_Store
+Thumbs.db
+
+# Ignore generated images inside outputs, but keep configuration files
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.webp
+
+# Ignore OS system garbage
+.DS_Store

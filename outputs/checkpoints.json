@@ -1,0 +1,16 @@
+{
+    "working 1": {
+        "prompt": "a beautiful landscape, highly detailed, 8k resolution",
+        "neg": "blurry, low quality, distorted",
+        "res": 512,
+        "steps": 8,
+        "cfg": 1,
+        "seed": 1223844113,
+        "lora": "None",
+        "lora_scale": 1,
+        "vae": "Default",
+        "text_encoder": "Default",
+        "transformer": "Default",
+        "scheduler": "Default"
+    }
+}
