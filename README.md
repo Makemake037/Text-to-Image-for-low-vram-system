@@ -17,6 +17,14 @@ Here are some example images generated using this optimized low-VRAM workflow al
 
 ---
 
+## 🎛️ Feature Spotlight: Dynamic Hardware Target Switch
+
+At the very top of the web page, you will find a **Hardware Target Button** that completely changes the backend execution layer between **CPU** and **GPU** modes on the fly. 
+* If your GPU is running out of memory during a heavy generation task, you can toggle it completely to **CPU** mode.
+* When you want maximum speed and have available overhead, click to swap back to **GPU** mode instantly.
+
+---
+
 ## 📌 About the Project
 
 This project was born out of a desire to deeply understand the inner mechanics of AI models. Beyond simply running inference, the goal was to investigate how hardware constraints impact performance and how to maximize efficiency through intelligent resource management. It has been an extensive hands-on journey into balancing the interplay between software architecture and hardware limitations.
@@ -25,15 +33,15 @@ This project was born out of a desire to deeply understand the inner mechanics o
 
 To ensure smooth generation on hardware with limited VRAM, this project utilizes a **dynamic hotswapping architecture**:
 
-* **Hardware Target Control:** Features a prominent toggle at the top of the interface to completely switch execution between **CPU** and **GPU** mode instantly depending on your immediate resource needs.
+* **Hardware Target Control Toggle:** Features a prominent hardware mode switch at the top of the interface page to instantly transition execution pipelines between **CPU** and **GPU** processing.
 * **Memory Efficiency:** The system dynamically swaps assets between the GPU and System RAM on the fly.
 * **Space Optimization:** It clears space for new model components by actively managing AI files in real-time.
 * **Persistent Performance:** Once loaded into RAM, components remain cached throughout your session to ensure faster subsequent generations, unless you explicitly exit the application.
 
 ## 🛠️ Implementation Details
 
-* **User Interface:** Features a clean, user-friendly web interface built with **Gradio**, including quick-access hardware configuration tools at the very top of the page.
-* **Model:** Utilizes `Z-Image-Turbo-SDNQ-uint4-svd-r32`. This is a 4-bit (UINT4 with SVD rank 32) quantization of the `Tongyi-MAI/Z-Image-Turbo` model, processed via SDNQ to provide high-quality output while drastically reducing the VRAM footprint.
+* **User Interface:** Features a clean, user-friendly web interface built with **Gradio**, putting the hardware control mode configuration buttons right at the top of the page layout.
+* **Model Pipeline:** Utilizes the [Z-Image-Turbo-SDNQ-uint4-svd-r32](https://huggingface.co/Disty0/Z-Image-Turbo-SDNQ-uint4-svd-r32/tree/main) repository. This is a 4-bit (UINT4 with SVD rank 32) quantization of the `Tongyi-MAI/Z-Image-Turbo` model, processed via SDNQ to provide high-quality output while drastically reducing the VRAM footprint.
 * **Compatibility:** Defaults to **bf16 (Bfloat16)** to ensure broader hardware compatibility and stability during inference.
 
 ---
