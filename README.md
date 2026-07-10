@@ -1,10 +1,21 @@
-Here is the updated version, seamlessly integrating the **Hardware Target Toggle** feature at both the workflow and usage levels.
-
----
-
 # 🚀 Low-VRAM Text-to-Image Generation
 
 Welcome! This project explores AI-driven image generation with a specific focus on optimization for budget and limited hardware environments.
+
+## 🖼️ Showcase Gallery
+Here are some example images generated using this optimized low-VRAM workflow along with system captures:
+
+<p align="center">
+  <img src="assets/img_18b506b0.png" width="45%" alt="Generated Cat Image" />
+  <img src="assets/img_c9daffa4.png" width="45%" alt="Generated Landscape Image" />
+</p>
+
+<p align="center">
+  <img src="assets/folder structure.png" width="45%" alt="Workspace Folders" />
+  <img src="assets/cmd scrren.png" width="45%" alt="CLI Terminal Interface" />
+</p>
+
+---
 
 ## 📌 About the Project
 
@@ -42,17 +53,3 @@ To ensure smooth generation on hardware with limited VRAM, this project utilizes
 2. Run the following command to start the UI:
 ```cmd
 "C:\StabilityMatrix-win-x64\Data\Packages\ComfyUI\venv\Scripts\python.exe" "C:\ZImage\run_sdnq_ui.py"
-
-```
-
-
-3. Once running, open your browser and navigate to the local host address: **`[http://127.0.0.1:7860/](http://127.0.0.1:7860/)`**
-4. **Configuration Steps in the UI:**
-* Select **`working 1`** from the profile dropdown menu to load the correct configuration.
-* Use the **Hardware Target Button** located at the top of the page to easily toggle the execution mode completely between CPU and GPU.
-
-
-
----
-
-> ⚠️ **Disclaimer:** This project is an optimization and implementation showcase. I do not own the underlying models or core architectures utilized in this repository; all credits go to their respective creators.
