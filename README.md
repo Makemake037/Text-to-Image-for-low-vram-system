@@ -55,9 +55,11 @@ To ensure smooth generation on hardware with limited VRAM, this project utilizes
 2. **Project Directory:** The application script and output management folder must be located at:
 `C:\ZImage\`
 
-### 🏃‍♂️ Running the Application
+### 📥 1. Automated Model Syncing (Hugging Face)
 
-1. Open your terminal or command prompt.
-2. Run the following command to start the UI:
-```cmd
-"C:\StabilityMatrix-win-x64\Data\Packages\ComfyUI\venv\Scripts\python.exe" "C:\ZImage\run_sdnq_ui.py"
+Because the repository layout remains incredibly lightweight, it does not include the massive weight files by default. Before launching the app for the first time, you **must synchronize the model cache** to your desktop:
+
+1. Open your terminal or command prompt inside the directory (`cd C:\ZImage`).
+2. Run the bundled synchronization script:
+   ```cmd
+   sync_models.bat
