@@ -36,6 +36,7 @@ This project was born out of a desire to deeply understand the inner mechanics o
 To ensure smooth generation on hardware with limited VRAM, this project utilizes a **dynamic hotswapping architecture**:
 
 * **Hardware Target Separation:** Places a real-time hardware tracking status display at the top of the interface, while keeping the structural toggle control switch at the bottom of the page layout.
+* **Persistent Configuration Storage:** The `outputs/` folder contains a critical `checkpoints.json` configuration file. This tracks all saved checkpoint setups for the app. By default, it comes pre-configured with the **`working 1`** checkpoint profile to get you running out of the box.
 * **Memory Efficiency:** The system dynamically swaps assets between the GPU and System RAM on the fly.
 * **Space Optimization:** It clears space for new model components by actively managing AI files in real-time.
 * **Persistent Performance:** Once loaded into RAM, components remain cached throughout your session to ensure faster subsequent generations, unless you explicitly exit the application.
