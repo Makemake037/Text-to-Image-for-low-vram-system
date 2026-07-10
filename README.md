@@ -26,7 +26,8 @@ To ensure smooth generation on hardware with limited VRAM, this project utilizes
 
 and must have seperate folder C:\ZImage\run_sdnq_ui.py"  ====--   THIS is to manage your output folder where script writes generated image.
 
-@echo off
+after running command it will hosted on local host http://127.0.0.1:7860/
+
 "C:\StabilityMatrix-win-x64\Data\Packages\ComfyUI\venv\Scripts\python.exe" "C:\ZImage\run_sdnq_ui.py"
 
 $$$ load profile working 1 from drop down
