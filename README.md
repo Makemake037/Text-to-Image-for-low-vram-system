@@ -20,21 +20,16 @@ To ensure smooth generation on hardware with limited VRAM, this project utilizes
 * **Model:** It utilizes the [Z-Image-Turbo-SDNQ-uint4-svd-r32](https://huggingface.co/Disty0/Z-Image-Turbo-SDNQ-uint4-svd-r32) model. This is a 4-bit (UINT4 with SVD rank 32) quantization of the [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) model, processed via SDNQ to provide high-quality output while drastically reducing VRAM requirements.
 * **Compatibility:** The system defaults to using **bf16** (Bfloat16) to ensure broader hardware compatibility and stability during inference.
 
-## Usage
+############## Usage ##################
 
 **Prerequisite:** You must have **Stability Matrix** installed at the following location to use the bundled virtual environment: `C:\StabilityMatrix-win-x64\Data\Packages\ComfyUI\venv\Scripts\python.exe`.
 
-and must have seperate folder C:\ZImage\run_sdnq_ui.py"
-
-To run the project, create a batch script (e.g., `run.bat`) with the following content:
-
+and must have seperate folder C:\ZImage\run_sdnq_ui.py"  ====--   THIS is to manage your output folder where script writes generated image.
 
 @echo off
 "C:\StabilityMatrix-win-x64\Data\Packages\ComfyUI\venv\Scripts\python.exe" "C:\ZImage\run_sdnq_ui.py"
 
-:: Keeps the window open if there is an error
-pause
-
+$$$ load profile working 1 from drop down
 
 
 ================NOTHING IS OWNED BY ME.===================
